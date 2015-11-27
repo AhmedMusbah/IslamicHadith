@@ -1,0 +1,30 @@
+﻿<Page x:Name="page"
+    x:Class="IslamicHadithWIN.HadithTitle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IslamicHadithWIN"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="barbtnSearchByBook" Icon="Page2" Label="بحث باسم الكتاب" HorizontalAlignment="Left" VerticalAlignment="Top" Click="barbtnSearchByBook_Click"/>
+            <AppBarButton x:Name="barbtnSearchByAuthor" Icon="People" Label="بحث باسم الراوي" Click="barbtnSearchByAuthor_Click"/>
+            <AppBarButton x:Name="barbtnBack" Icon="Back" Label="رجوع" Click="barbtnBack_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="gridMain" Height="{Binding ActualHeight, ElementName=page, Mode=OneWay}" Width="{Binding ActualWidth, ElementName=page, Mode=OneWay}">
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Assets/Background.png" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel x:Name="stackMain" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=gridMain, Mode=OneWay}" Height="{Binding ActualHeight, ElementName=gridMain, Mode=OneWay}">
+            <TextBlock x:Name="txtHeader" TextWrapping="Wrap" Text="فهرس المواضيع" SelectionHighlightColor="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26.667" Foreground="White" />
+            <ListBox x:Name="listTitle" Height="{Binding ActualHeight, ElementName=gridMain, Mode=OneWay}" Background="{x:Null}" FontSize="21.333" BorderBrush="{x:Null}" Foreground="White" SelectionChanged="listTitle_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft" Width="{Binding ActualWidth, ElementName=stackMain, Mode=OneWay}" />
+            <ListBox x:Name="listHadith" Height="{Binding ActualHeight, ElementName=gridMain, Mode=OneWay}" Background="{x:Null}" FontSize="21.333" BorderBrush="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="listHadith_SelectionChanged" Width="{Binding ActualWidth, ElementName=stackMain, Mode=OneWay}" FlowDirection="RightToLeft" />
+        </StackPanel>
+    </Grid>
+</Page>

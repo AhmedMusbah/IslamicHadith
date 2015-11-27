@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/btnShareFacebook"
+        android:title="Facebook" 
+        android:icon="@drawable/facebook" />
+  <item android:id="@+id/btnShareTwitter"
+        android:title="Twitter" 
+        android:icon="@drawable/twitter" />
+  <item android:id="@+id/btnShareWhatsApp"
+        android:title="WhatsApp" 
+        android:icon="@drawable/whatsapp" />
+  <item android:id="@+id/btnCopyToClipboard"
+        android:title="نسخ"
+        android:icon="@drawable/copy" />
+</menu>

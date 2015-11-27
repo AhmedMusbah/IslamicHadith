@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:flatui="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/Settings">
+  <item android:id="@+id/Settings"
+                  android:showAsAction="always"
+                  android:orderInCategory="300"
+                  android:title="إعدادات"
+                  android:icon="@drawable/Settings">
+    <menu>
+      <item android:id="@+id/Themes"
+            android:title="الألوان">
+        <menu>
+          <item android:id="@+id/ThemesDark"
+                android:title="داكن"/>
+          <item android:id="@+id/ThemesSnow"
+                android:title="فاتح"/>
+          <item android:id="@+id/ThemesGreen"
+                android:title="أخضر"/>
+          <item android:id="@+id/ThemesOrange"
+                android:title="برتقالي"/>
+          <item android:id="@+id/ThemesBlue"
+                android:title="أزرق"/>
+        </menu>
+      </item>
+      <item android:id="@+id/Background"
+            android:title="الخلفية"
+            android:showAsAction="never"
+            android:orderInCategory="50">
+        <menu>
+          <item android:id="@+id/BackgroundNormal"
+                android:title="عادي"/>
+          <item android:id="@+id/BackgroundGray"
+                android:title="رمادي"/>
+          <item android:id="@+id/BackgroundBlack"
+                android:title="داكن"/>
+        </menu>
+      </item>
+    </menu>
+  </item>
+</menu>

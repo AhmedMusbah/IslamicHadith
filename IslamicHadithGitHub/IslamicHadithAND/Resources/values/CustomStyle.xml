@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<style name="CustomWindowTitleBackground">
+		<item name="android:background">#323331</item>
+	</style>
+	<style name="CustomTheme" parent="android:Theme">
+		<item name="android:windowTitleSize">36dip</item>
+	</style>
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/Mohamed</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>

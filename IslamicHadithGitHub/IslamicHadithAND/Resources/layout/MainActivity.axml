@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:keepScreenOn="true">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutMain"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/background">
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnSonanElNesaay"
+                android:layout_column="0"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SonanElNsaay"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+            <Button
+                android:id="@+id/btnSahihElBokhary"
+                android:layout_column="1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SahihElBokhary"
+                android:paddingRight="25dip"
+                android:paddingLeft="25dip"
+                android:paddingTop="25dip"
+                android:paddingBottom="25dip" />
+            <Button
+                android:id="@+id/btnSahihMoslem"
+                android:layout_column="2"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SahihMoslem"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnSonanElTormozy"
+                android:layout_column="0"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SonanElTormozy"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+            <Button
+                android:id="@+id/btnSonanAbnMagh"
+                android:layout_column="1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SonanAbnMagh"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+            <Button
+                android:id="@+id/btnSonanAbyDawod"
+                android:layout_column="2"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SonanAbyDawod"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnMasnadAhmed"
+                android:layout_column="0"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/MasnadAhmed"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+            <Button
+                android:id="@+id/btnMawteaMalek"
+                android:layout_column="1"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/MawteaMalek"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+            <Button
+                android:id="@+id/btnSonanElDarmy"
+                android:layout_column="2"
+                android:layout_width="100dip"
+                android:layout_height="100dip"
+                android:background="@drawable/SonanElDarmy"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="25dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="IslamicHadithWIN.MawteaMalek"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IslamicHadithWIN"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="barbtnSearchByBook" Icon="Page2" Label="بحث باسم الكتاب" HorizontalAlignment="Left" VerticalAlignment="Top" Click="barbtnSearchByBook_Click"/>
+            <AppBarButton x:Name="barbtnSearchByAuthor" Icon="People" Label="بحث باسم الراوي" Click="barbtnSearchByAuthor_Click"/>
+            <AppBarButton x:Name="barbtnBack" Icon="Back" Label="رجوع" Click="barbtnBack_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="gridMain" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=page, Mode=OneWay}" Height="{Binding ActualHeight, ElementName=page, Mode=OneWay}">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/Background.png"/>
+        </Grid.Background>
+        <StackPanel x:Name="stackMain" HorizontalAlignment="Center" Height="{Binding ActualHeight, ElementName=page, Mode=OneWay}" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=page, Mode=OneWay}">
+            <TextBlock x:Name="txtHeader" TextWrapping="Wrap" Text="موطأ مالك" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="26.667" Margin="406,0"/>
+            <ListBox x:Name="listHadith" HorizontalAlignment="Center" Height="{Binding ActualHeight, ElementName=page, Mode=OneWay}" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=page, Mode=OneWay}" Background="{x:Null}" BorderBrush="{x:Null}" FlowDirection="RightToLeft"/>
+        </StackPanel>
+    </Grid>
+</Page>

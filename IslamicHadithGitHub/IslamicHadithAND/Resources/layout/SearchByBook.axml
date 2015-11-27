@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:textAlignment="center"
+    style="@android:style/Widget.ListView.White">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutSearchByBook"
+        android:layout_weight="0">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKeywordBook"
+            android:textColor="@android:color/white"
+            android:hint="بحث بكلمة" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBookNameData"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:hint="اسم الكتاب"
+            android:prompt="@string/Books" />
+        <Button
+            android:text="بحث"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnSearchByBookData" />
+    </LinearLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listHadithByBook"
+        android:layout_weight="1"
+        style="@android:style/Widget.ListView.White" />
+</LinearLayout>

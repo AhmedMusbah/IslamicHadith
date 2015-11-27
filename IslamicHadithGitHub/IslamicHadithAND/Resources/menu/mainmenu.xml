@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:flatui="http://schemas.android.com/apk/res-auto"
+android:id="@+id/mainMenu">
+  <item android:id="@+id/Show"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:showAsAction="always"
+        android:orderInCategory="50">
+    <menu>
+      <item android:id="@+id/ShowBySubject"
+            android:title="عرض الموضوعات"/>
+      <item android:id="@+id/ShowByTitle"
+            android:title="عرض العناوين"/>
+    </menu>
+  </item>
+  <item android:id="@+id/Search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:showAsAction="always"
+        android:orderInCategory="100">
+    <menu>
+      <item android:id="@+id/SearchByBook"
+            android:title="بحث باسم الكتاب"/>
+      <item android:id="@+id/SearchByAuthor"
+            android:title="بحث باسم الراوي"/>
+    </menu>
+  </item>
+	<item android:id="@+id/Preferences"
+				android:showAsAction="always"
+        android:icon="@drawable/Perferences"
+				android:orderInCategory="400">
+				<menu>
+					<item android:id="@+id/help"
+								android:showAsAction="never"
+								android:orderInCategory="500"
+								android:title="مساعدة"
+                android:icon="@drawable/Help"/>
+					<item android:id="@+id/about"
+								android:showAsAction="never"
+								android:orderInCategory="600"
+								android:title="حول"
+                android:icon="@drawable/About"/>
+				</menu>
+		</item>
+</menu>

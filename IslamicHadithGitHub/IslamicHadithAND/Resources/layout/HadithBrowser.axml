@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:keepScreenOn="true"
+    android:id="@+id/layoutHadithBrowser"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/txtHadith"
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:text="txtHadith"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutMain"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent">
+        <TableRow
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_column="0"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:background="@android:drawable/ic_media_previous" />
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_column="1"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:background="@android:drawable/ic_menu_zoom" />
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_column="2"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:background="@android:drawable/ic_menu_share" />
+            <Button
+                android:id="@+id/btnZoomOut"
+                android:layout_column="3"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:background="@android:drawable/ic_menu_search" />
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_column="4"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingBottom="20dip"
+                android:paddingTop="20dip"
+                android:background="@android:drawable/ic_media_next" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

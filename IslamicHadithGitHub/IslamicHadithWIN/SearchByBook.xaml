@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="IslamicHadithWIN.SearchByBook"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IslamicHadithWIN"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+           <AppBarButton x:Name="barbtnBack" Icon="Back" Label="رجوع" Click="barbtnBack_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="gridMain">
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Assets/Background.png" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel x:Name="stackMain" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=gridMain, Mode=OneWay}" Height="{Binding ActualHeight, ElementName=gridMain, Mode=OneWay}">
+            <TextBox x:Name="txtBookKeyword" FlowDirection="RightToLeft" PlaceholderText="بحث بكلمة" />
+            <TextBox x:Name="txtBookName" PlaceholderText="بحث من كتاب" FlowDirection="RightToLeft" />
+            <Button x:Name="btnSearchByBookData" Content="بحث" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="btnSearchByBookData_Click" Foreground="White" />
+            <ListBox x:Name="listHadith" Height="635" Background="{x:Null}" FontSize="21.333" BorderBrush="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="listHadith_SelectionChanged" Width="{Binding ActualWidth, ElementName=stackMain, Mode=OneWay}" FlowDirection="RightToLeft" />
+        </StackPanel>
+    </Grid>
+</Page>

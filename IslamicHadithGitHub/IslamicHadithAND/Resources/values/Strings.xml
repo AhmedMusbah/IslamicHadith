@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Islamic Hadith</string>
+  <string name="library_name">FlatUI.Xamarin.Android</string>
+  <string name="Authors">اسم الراوي</string>
+  <string-array name="AuthorsNames">
+    <item>بحث لكل الرواه</item>
+    <item>أبو عبد الله محمد بن إسماعيل بن إبراهيم بن المغيرة بن بردزبة البخاري</item>
+    <item>أبو الحسين مسلم بن الحجاج القشيري النيسابوري</item>
+    <item>أبو عيسى محمد بن عيسى بن سورة بن موسى بن الضحاك السلمي الترمذي</item>
+    <item>أبو عبد الرحمن أحمد بن على بن شعيب بن على بن سنان بن البحر الخراساني</item>
+    <item>سليمان بن الأشعث بن إسحاق بن بشير بن شداد بن عمر الأزدي السجستاني</item>
+    <item>أبو عبد الله محمد بن يزيد بن ماجه الربعي القزويني</item>
+    <item>أحمد بن محمد بن حنبل بن هلال بن أسد الشيبانى</item>
+    <item>أبو عبد الله مالك بن أنس بن مالك بن أبى عامر بن عمرو بن الحارث بن غيمان بن خثيل بن عمرو بن الحارث، الأصبحي المدني</item>
+    <item>أبو محمد عبد الله بن عبد الرحمن بن برهام الدارمي السمرقندي</item>
+  </string-array>
+  <string name="Books">اسم الكتاب</string>
+  <string-array name="BooksNames">
+    <item>بحث لكل الكتب</item>
+    <item>صحيح البخاري</item>
+    <item>صحيح مسلم‏</item>
+    <item>سنن الترمذي‏</item>
+    <item>سنن النسائي‏</item>
+    <item>سنن أبي داود‏</item>
+    <item>سنن ابن ماجه‏</item>
+    <item>مسند أحمد‏</item>
+    <item>موطأ مالك‏</item>
+    <item>سنن الدارمي‏</item>
+  </string-array>
+</resources>

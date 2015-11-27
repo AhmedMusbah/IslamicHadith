@@ -1,0 +1,84 @@
+﻿<Page x:Name="page"
+    x:Class="IslamicHadithWIN.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IslamicHadithWIN"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar x:Name="CommandBar">
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="barbtnSettings" Label="اعدادات" Icon="Setting" Click="barbtnSettings_Click"/>
+                <AppBarButton x:Name="barbtnHelp" Label="مساعدة" Icon="Help" Click="barbtnHelp_Click"/>
+                <AppBarButton x:Name="barbtnAbout" Label="حول" Icon="Important" Click="barbtnAbout_Click"/>
+            </CommandBar.SecondaryCommands>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="barbtnHadithTitle" Icon="Underline" Label="عرض عناوين الأحاديث" Click="barbtnHadithTitle_Click"/>
+            <AppBarButton x:Name="barbtnHadithSubject" Icon="Edit" Label="عرض موضوعات الأحاديث" Click="barbtnHadithSubject_Click"/>
+            <AppBarButton x:Name="barbtnSearchByAuthor" Icon="People" Label="بحث باسم الراوي" Click="barbtnSearchByAuthor_Click"/>
+            <AppBarButton x:Name="barbtnSearchByBook" Icon="Page2" Label="بحث باسم الكتاب" Click="barbtnSearchByBook_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="gridMain" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding ActualWidth, ElementName=page, Mode=OneWay}" Height="{Binding ActualHeight, ElementName=page, Mode=OneWay}">
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Assets/Background.png" Stretch="Fill"/>
+        </Grid.Background>
+        <StackPanel x:Name="stackMain" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel x:Name="stackMainRow1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="btnSahihMoslem" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="100" Click="btnSahihMoslem_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SahihMoslem.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSahihElBokhary" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="100" Click="btnSahihElBokhary_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SahihElBokhary.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSonanElTormozy" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="100" Click="btnSonanElTormozy_Click" >
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SonanElTormozy.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel x:Name="stackMainRow2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="btnSonanElNsaay" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnSonanElNsaay_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/SonanElNsaay.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSonanAbyDawod" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnSonanAbyDawod_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SonanAbyDawod.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSonanAbnMagh" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnSonanAbnMagh_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SonanAbnMagh.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel x:Name="stackMainRow3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="btnMasnadAhmed" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnMasnadAhmed_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/MasnadAhmed.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnMawteaMalek" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnMawteaMalek_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/MawteaMalek.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnSonanElDarmy" Content="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" Click="btnSonanElDarmy_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="Assets/SonanElDarmy.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
